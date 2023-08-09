@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\PageController;
+use Illuminate\Routing\RouteGroup;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::name('page.')->controller(PageController::class)->group(function () {
+    Route::get('/', 'index')->name('index');
+    Route::get('/success', 'success')->name('success');
+
+    Route::post('/checkout', 'checkout')->name('checkout');
+
+    Route::post('/pay', 'pay')->name('pay');
+    Route::get('/callback', 'callback')->name('callback');
 });
