@@ -17,10 +17,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::name('page.')->controller(PageController::class)->group(function () {
     Route::get('/', 'index')->name('index');
-    Route::get('/success', 'success')->name('success');
+    Route::get('/request/success', 'success')->name('success');
+    Route::get('/request/failed', 'failed')->name('failed');
 
-    Route::post('/checkout', 'checkout')->name('checkout');
+    Route::get('/checkout', 'checkout')->name('checkout');
 
     Route::post('/pay', 'pay')->name('pay');
-    Route::get('/callback', 'callback')->name('callback');
+    Route::get('/payment/callback', 'callback')->name('payment.callback');
 });

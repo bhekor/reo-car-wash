@@ -490,7 +490,7 @@
                             </ul>
                         </div>
                         <div class="tp-pricing-btn">
-                            <form action="{{ route('page.checkout') }}" method="post">@csrf
+                            <form action="{{ route('page.checkout') }}" method="get">
                                 <input type="hidden" name="plan_name" value="routine">
                                 <button type="submit" class="theme-btn"><i class="flaticon-enter"></i> Get Service</button>
                             </form>
@@ -523,7 +523,7 @@
                             </ul>
                         </div>
                         <div class="tp-pricing-btn">
-                            <form action="{{ route('page.checkout') }}" method="post">@csrf
+                            <form action="{{ route('page.checkout') }}" method="get">
                                 <input type="hidden" name="plan_name" value="premium">
                                 <button type="submit" class="theme-btn active"><i class="flaticon-enter"></i> Get Service</button>
                             </form>
@@ -556,7 +556,7 @@
                             </ul>
                         </div>
                         <div class="tp-pricing-btn">
-                            <form action="{{ route('page.checkout') }}" method="post">@csrf
+                            <form action="{{ route('page.checkout') }}" method="get">
                                 <input type="hidden" name="plan_name" value="executive">
                                 <button type="submit" class="theme-btn"><i class="flaticon-enter"></i> Get Service</button>
                             </form>

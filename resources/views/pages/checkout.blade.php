@@ -46,7 +46,7 @@
                 <div class="col-lg-10">
                     <div class="section-title-wrapper-two mb-50 wow fadeInUp" data-wow-delay=".2s">
                         <h5 class="tp-section-subtitle common-yellow-shape mb-20 heading-color-black">Get Free Estimate</h5>
-                        <h2 class="tp-section-title heading-color-black">If you Have Any Query, Contact with us </h2>
+                        <h2 class="tp-section-title heading-color-black">{{ $plan }} </h2>
                     </div>
                 </div>
             </div>
@@ -92,6 +92,15 @@
                 </div>
                 <div class="col-lg-8">
                     <div class="tp-contact-form">
+                        @if($errors->any())
+                            <div class="alert alert-danger">
+                                <ul style="padding-left: 15px">
+                                    @foreach($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
                         <form action="{{ route('page.pay') }}" method="post">@csrf
                             <div class="row custom-mar-20">
                                 <div class="col-md-6 custom-pad-20">
