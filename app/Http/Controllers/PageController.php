@@ -139,7 +139,7 @@ class PageController extends Controller
                     Mail::to($email)->send(new OrderPlaced(
                         $amount, $plan, $name, $email, $phone, $location, $notes, $transactionReference, $payment_type, 'Your request has been received!', 'user'
                     ));
-                    Mail::to('admin@reocarwash.com')->send(new OrderPlaced(
+                    Mail::to('kareemidris313@gmail.com')->send(new OrderPlaced(
                         $amount, $plan, $name, $email, $phone, $location, $notes, $payment_type, $transactionReference, 'A customer has placed an order!', 'admin'
                     ));
 
