@@ -105,22 +105,22 @@
                             <div class="row custom-mar-20">
                                 <div class="col-md-6 custom-pad-20">
                                     <div class="tp-contact-form-field mb-20">
-                                        <input type="text" name="name" placeholder="Full name">
+                                        <input type="text" name="name" placeholder="Full name" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 custom-pad-20">
                                     <div class="tp-contact-form-field mb-20">
-                                        <input type="email" name="email" placeholder="Email Address">
+                                        <input type="email" name="email" placeholder="Email Address" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 custom-pad-20">
                                     <div class="tp-contact-form-field mb-20">
-                                        <input type="text" name="phone" placeholder="Phone Number">
+                                        <input type="text" name="phone" placeholder="Phone Number" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 custom-pad-20">
                                     <div class="tp-contact-form-field mb-20">
-                                        <input type="text" name="location" placeholder="Location">
+                                        <input type="text" name="location" placeholder="Location" required>
                                     </div>
                                 </div>
                                 {{-- <div class="col-md-6 custom-pad-20">
